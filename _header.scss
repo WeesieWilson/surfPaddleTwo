@@ -1,0 +1,55 @@
+.headerContainer{
+  background-image: url(hero-image.jpg);
+  background-attachment: fixed;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position-y: 51%;
+}
+
+.wrapper{
+      display: flex;
+      flex-flow: row;
+      justify-content: flex-start;
+      align-items: flex-start;
+      margin: 0 auto;
+      width: 80%;
+      padding-top: 1%;
+    }
+
+
+
+.wrapper{
+  .logoContainer{
+    flex: 1 auto;
+    order: 1;
+      img{
+        width: 20%;
+        display: inline-block;
+      }
+      p{
+        display: inline-block;
+        position: absolute;
+        top: 3%;
+      }
+  }
+  .searchContainer{
+    flex: 1 auto;
+    order: 3;
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-end;
+      .searchFlex{
+        padding: 11% 0%;
+      }
+  }
+
+  .mainHeader{
+    flex: 2 auto;
+    order: 2;
+    align-self: center;
+  }
+    p:first-child{
+      font-size: 606%;
+    }
+
+}
