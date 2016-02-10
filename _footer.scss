@@ -1,0 +1,41 @@
+
+
+footer{
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+    .footer-pic{
+      align-self: stretch;
+        img{
+          display: inline-block;
+          height: 350px;
+          width: 24.7%;
+        }
+    }
+
+
+
+  .footer{
+    align-self: stretch;
+    height: 100px;
+    background-color: $reallydarkgreen;
+      .footerLogo{
+        background-image: url(carwhite.png);
+        width: 60px;
+        height: 60px;
+        align-self: center;
+        background-size: 82%;
+        background-repeat: no-repeat;
+        border: 2px solid white;
+        border-radius: 100%;
+        background-position-x: 37%;
+        background-position-y: 50%;
+        position: relative;
+        left: 90%;
+        top: 22%;
+      }
+
+  }
+
+}
