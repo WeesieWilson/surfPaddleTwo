@@ -1,0 +1,89 @@
+.content-container{
+  font-family: $mainfont;
+  display: flex;
+  justify-content: flex-start;
+  // flex-wrap: wrap;
+}
+
+.aside-container{
+  flex: 1 auto;
+  display: flex;
+  flex-flow: column;
+  h2{
+    text-transform: uppercase;
+    color: $darkgreen;
+    font-size: 450%;
+  }
+  .author-container div{
+    display: inline-block;
+    background-image: url(profile.jpg);
+    background-size: 100%;
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    border-radius: 55%;
+    background-position-y: 24%;
+  }
+  .author-container p{
+    display: inline-block;
+    position: relative;
+    top: -13px;
+    font-weight: bold;
+    color: $darkgreen;
+    text-transform: uppercase;
+      span{
+        text-transform: lowercase;
+        color: #B6C2CB;
+        left: 28px;
+        position: relative;
+        font-weight: 200;
+          span{
+            text-decoration: underline;
+            position: relative;
+            left: 1%;
+          }
+      }
+  }
+  .first-paragraph{
+    p span{
+      text-decoration: underline;
+      color: $darkgreen;
+    }
+  }
+  .big-text{
+    border-left: solid 2px $darkgreen;
+    padding-left: 2%;
+    margin-left: 4%;
+    font-size: 2em;
+    font-family: $curlyfont;
+    color: $darkgreen;
+  }
+  .aside-footer{
+    align-self: flex-end;
+    .social{
+      width: 60px;
+      height: 60px;
+      display: inline-block;
+      background-size: 66%;
+      background-repeat: no-repeat;
+      border-radius: 54%;
+      background-position-x: 50%;
+      background-position-y: 50%;
+    }
+    .facebook-container{
+      background-image: url(facebook.png);
+      border: 2px solid #3B5998;
+    }
+    .instagram-container{
+      background-image: url(instagram.png);
+      border: 2px solid grey;
+    }
+    .youtube-container{
+      background-image: url(youtube.png);
+      border: 2px solid #CA3737;
+    }
+
+
+  }
+
+}

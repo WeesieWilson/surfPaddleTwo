@@ -1,9 +1,22 @@
 .headerContainer {
-  background-image: url(hero-image.jpg);
+  position: relative;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  color: #07332a; }
+
+.headerContainer::after {
+  content: "";
+  background: url(hero-image.jpg);
   background-attachment: fixed;
+  background-position-y: 95%;
   background-size: 100%;
   background-repeat: no-repeat;
-  background-position-y: 51%; }
+  opacity: 0.7;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1; }
 
 .wrapper {
   display: flex;
@@ -14,30 +27,119 @@
   width: 80%;
   padding-top: 1%; }
 
-.wrapper .logoContainer {
+.logoContainer {
+  font-size: 1.5em;
   flex: 1 auto;
-  order: 1; }
-  .wrapper .logoContainer img {
-    width: 20%;
-    display: inline-block; }
-  .wrapper .logoContainer p {
-    display: inline-block;
-    position: absolute;
-    top: 3%; }
+  order: 1;
+  display: flex;
+  justify-content: space-around; }
+  .logoContainer .logo {
+    background-image: url(car.png);
+    width: 60px;
+    height: 60px;
+    align-self: center;
+    background-size: 82%;
+    background-repeat: no-repeat;
+    border: 2px solid #07332A;
+    border-radius: 100%;
+    background-position-x: 37%;
+    background-position-y: 50%; }
 
-.wrapper .searchContainer {
+.searchContainer {
   flex: 1 auto;
   order: 3;
   display: flex;
-  flex-flow: row;
-  justify-content: flex-end; }
-  .wrapper .searchContainer .searchFlex {
-    padding: 11% 0%; }
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 1.9%; }
+  .searchContainer a {
+    text-decoration: none;
+    color: #1F3944;
+    text-transform: uppercase;
+    font-weight: bold;
+    align-self: center; }
+    .searchContainer a:hover {
+      font-size: 2em; }
 
-.wrapper .mainHeader {
+.mainHeader {
   flex: 2 auto;
   order: 2;
-  align-self: center; }
+  align-self: center;
+  text-align: center; }
+  .mainHeader p {
+    font-size: 700%; }
+  .mainHeader span {
+    font-size: 15%;
+    font-family: "Bad Script", cursive;
+    display: block;
+    color: white; }
 
-.wrapper p:first-child {
-  font-size: 606%; }
+.content-container {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  display: flex;
+  justify-content: flex-start; }
+
+.aside-container {
+  flex: 1 auto;
+  display: flex;
+  flex-flow: column; }
+  .aside-container h2 {
+    text-transform: uppercase;
+    color: #4D7C90;
+    font-size: 450%; }
+  .aside-container .author-container div {
+    display: inline-block;
+    background-image: url(profile.jpg);
+    background-size: 100%;
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    border-radius: 55%;
+    background-position-y: 24%; }
+  .aside-container .author-container p {
+    display: inline-block;
+    position: relative;
+    top: -13px;
+    font-weight: bold;
+    color: #4D7C90;
+    text-transform: uppercase; }
+    .aside-container .author-container p span {
+      text-transform: lowercase;
+      color: #B6C2CB;
+      left: 28px;
+      position: relative;
+      font-weight: 200; }
+      .aside-container .author-container p span span {
+        text-decoration: underline;
+        position: relative;
+        left: 1%; }
+  .aside-container .first-paragraph p span {
+    text-decoration: underline;
+    color: #4D7C90; }
+  .aside-container .big-text {
+    border-left: solid 2px #4D7C90;
+    padding-left: 2%;
+    margin-left: 4%;
+    font-size: 2em;
+    font-family: "Bad Script", cursive;
+    color: #4D7C90; }
+  .aside-container .aside-footer {
+    align-self: flex-end; }
+    .aside-container .aside-footer .social {
+      width: 60px;
+      height: 60px;
+      display: inline-block;
+      background-size: 66%;
+      background-repeat: no-repeat;
+      border-radius: 54%;
+      background-position-x: 50%;
+      background-position-y: 50%; }
+    .aside-container .aside-footer .facebook-container {
+      background-image: url(facebook.png);
+      border: 2px solid #3B5998; }
+    .aside-container .aside-footer .instagram-container {
+      background-image: url(instagram.png);
+      border: 2px solid grey; }
+    .aside-container .aside-footer .youtube-container {
+      background-image: url(youtube.png);
+      border: 2px solid #CA3737; }

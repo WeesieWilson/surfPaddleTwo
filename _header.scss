@@ -1,10 +1,28 @@
+
+
+
 .headerContainer{
-  background-image: url(hero-image.jpg);
+  position: relative;
+  font-family: $mainfont;
+  color: $reallydarkgreen;
+}
+
+.headerContainer::after {
+  content: "";
+  background: url(hero-image.jpg);
   background-attachment: fixed;
+  background-position-y: 95%;
   background-size: 100%;
   background-repeat: no-repeat;
-  background-position-y: 51%;
+  opacity: 0.7;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
 }
+
 
 .wrapper{
       display: flex;
@@ -16,30 +34,42 @@
       padding-top: 1%;
     }
 
-
-
-.wrapper{
   .logoContainer{
+    font-size: 1.5em;
     flex: 1 auto;
     order: 1;
-      img{
-        width: 20%;
-        display: inline-block;
+    display: flex;
+    justify-content: space-around;
+      .logo{
+        background-image: url(car.png);
+        width: 60px;
+        height: 60px;
+        align-self: center;
+        background-size: 82%;
+        background-repeat: no-repeat;
+        border: 2px solid #07332A;
+        border-radius: 100%;
+        background-position-x: 37%;
+        background-position-y: 50%;
       }
-      p{
-        display: inline-block;
-        position: absolute;
-        top: 3%;
-      }
+
   }
+
   .searchContainer{
     flex: 1 auto;
     order: 3;
     display: flex;
-    flex-flow: row;
-    justify-content: flex-end;
-      .searchFlex{
-        padding: 11% 0%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 1.9%;
+      a{
+        text-decoration: none;
+        color: #1F3944;
+        text-transform: uppercase;
+        font-weight: bold;
+        align-self: center;
+          &:hover{
+          font-size: 2em;}
       }
   }
 
@@ -47,9 +77,15 @@
     flex: 2 auto;
     order: 2;
     align-self: center;
-  }
-    p:first-child{
-      font-size: 606%;
-    }
-
+    text-align: center;
+      p{
+        font-size: 700%;
+        // font-family: $curlyfont;
+        }
+      span{
+        font-size: 15%;
+        font-family: $curlyfont;
+        display: block;
+        color: white;
+      }
 }
